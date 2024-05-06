@@ -3,5 +3,7 @@ __pycache__/
 node_modules/
 output/
 
+# Environments
 credentials.yaml
 cookies.txt
+netscape-cookies.txt
