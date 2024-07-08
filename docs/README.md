@@ -77,6 +77,23 @@ USER_ID: < User ID from Canvas >
 COOKIES_PATH: < Path to cookies file >
 ```
 
+## Setup cookie conversion script
+### Requirements
+	- CLI/Terminal
+	- Node.js
+
+### Instructions
+ - Navigate to the site that needs sessions auth
+ - Open Dev Tools (F12)
+ - Go to Application > Storage > Cookies
+ - Copy the table for the desired website.
+ - Paste into a txt file
+ - Run the script
+
+ 		``` node convert-cookies.js file-with-cookies-copy-pasted-from-Chrome.txt > netscape-cookies.txt ```
+
+With the cookies ready, run the command below.
+
 You can then run the script as normal:
 `python export.py`
 
